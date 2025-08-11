@@ -1,0 +1,17 @@
+elasticsearch:
+  ##internal host
+  #honeypot_host: <you can put internal host here for testing>
+  ##external host
+  honeypot_host: <host you're accessing example: 'https://whole_lot_of_data.com:9200'>
+  
+  api_key_id: "<api id>"
+  api_key: "<api_key>"
+  index_name: "logstash-*"
+  minutes_back: 90
+
+tpot:
+  ignore_types: ["fatt","p0f","suricata","NGINX"] #really noisey, low value log entry types
+  #ignore_types: [] #if you want to see everything
+
+logging:
+  level: "ERROR"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
